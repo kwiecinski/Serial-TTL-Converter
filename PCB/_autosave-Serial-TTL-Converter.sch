@@ -1873,4 +1873,30 @@ F 3 "" H 3750 1300 50  0001 C CNN
 	1    3750 1300
 	-1   0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F4C68B8
+P 7850 1200
+F 0 "#PWR?" H 7850 1050 50  0001 C CNN
+F 1 "+5V" H 7865 1373 50  0000 C CNN
+F 2 "" H 7850 1200 50  0001 C CNN
+F 3 "" H 7850 1200 50  0001 C CNN
+	1    7850 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1550 8100 1550
+Wire Wire Line
+	8100 1550 8100 1450
+Wire Wire Line
+	8100 1350 8150 1350
+Wire Wire Line
+	8150 1450 8100 1450
+Connection ~ 8100 1450
+Wire Wire Line
+	8100 1450 8100 1350
+Wire Wire Line
+	8100 1450 7850 1450
+Wire Wire Line
+	7850 1450 7850 1200
 $EndSCHEMATC
