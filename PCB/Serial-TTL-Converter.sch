@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L project-symbols:ST75185 U2
+L Serial-TTL-Converter-rescue:ST75185-project-symbols U2
 U 1 1 5F215863
 P 5100 4850
 F 0 "U2" H 5475 5015 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 4900 5050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L project-symbols:LT8570 U1
+L Serial-TTL-Converter-rescue:LT8570-project-symbols U1
 U 1 1 5F2172C9
 P 3150 2700
 F 0 "U1" H 3425 2875 50  0000 C CNN
@@ -800,8 +800,8 @@ L Device:CP C1
 U 1 1 5F36FD3E
 P 2300 3100
 F 0 "C1" H 2418 3146 50  0000 L CNN
-F 1 "1u" H 2418 3055 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Reflow" H 2338 2950 50  0001 C CNN
+F 1 "100u/6V3" H 2418 3055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2338 2950 50  0001 C CNN
 F 3 "~" H 2300 3100 50  0001 C CNN
 	1    2300 3100
 	1    0    0    -1  
@@ -1110,7 +1110,7 @@ L Device:C C11
 U 1 1 5F5D2B8F
 P 10300 2900
 F 0 "C11" H 10100 2950 50  0000 L CNN
-F 1 "100n" H 10000 2850 50  0000 L CNN
+F 1 "1u" H 10000 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 10338 2750 50  0001 C CNN
 F 3 "~" H 10300 2900 50  0001 C CNN
 	1    10300 2900
@@ -1153,17 +1153,6 @@ Wire Wire Line
 	11050 2700 11250 2700
 Wire Wire Line
 	11250 3100 11250 3050
-$Comp
-L Device:CP C12
-U 1 1 5F56E50A
-P 11250 2900
-F 0 "C12" H 11368 2946 50  0000 L CNN
-F 1 "22u" H 11368 2855 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 11288 2750 50  0001 C CNN
-F 3 "~" H 11250 2900 50  0001 C CNN
-	1    11250 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10750 3250 10750 3100
 $Comp
@@ -1613,21 +1602,10 @@ L Device:C C7
 U 1 1 5F5775AA
 P 5650 3150
 F 0 "C7" H 5765 3196 50  0000 L CNN
-F 1 "160u" H 5765 3105 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_Tantal_D6.0mm_P2.50mm" H 5688 3000 50  0001 C CNN
+F 1 "100n" H 5765 3105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5688 3000 50  0001 C CNN
 F 3 "~" H 5650 3150 50  0001 C CNN
 	1    5650 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C6
-U 1 1 5F576334
-P 5300 3150
-F 0 "C6" H 5418 3196 50  0000 L CNN
-F 1 "1u" H 5418 3105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5338 3000 50  0001 C CNN
-F 3 "~" H 5300 3150 50  0001 C CNN
-	1    5300 3150
 	1    0    0    -1  
 $EndComp
 Connection ~ 8750 3200
@@ -1637,17 +1615,6 @@ Wire Wire Line
 	8750 3200 9100 3200
 Wire Wire Line
 	8750 2450 9100 2450
-$Comp
-L Device:CP C10
-U 1 1 5F5464C8
-P 9100 2600
-F 0 "C10" H 9218 2646 50  0000 L CNN
-F 1 "160u" H 9218 2555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 9138 2450 50  0001 C CNN
-F 3 "~" H 9100 2600 50  0001 C CNN
-	1    9100 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8400 2450 8750 2450
 Connection ~ 8400 2450
@@ -1684,17 +1651,6 @@ F 2 "" H 8750 3200 50  0001 C CNN
 F 3 "" H 8750 3200 50  0001 C CNN
 	1    8750 3200
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R22
-U 1 1 5F3F9894
-P 8750 2600
-F 0 "R22" H 8850 2570 50  0000 C CNN
-F 1 "10k" H 8870 2640 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8680 2600 50  0001 C CNN
-F 3 "~" H 8750 2600 50  0001 C CNN
-	1    8750 2600
-	1    0    0    1   
 $EndComp
 $Comp
 L power:-12V #PWR0141
@@ -1812,7 +1768,7 @@ $EndComp
 Wire Wire Line
 	6750 3150 6800 3150
 $Comp
-L project-symbols:MAX736 U3
+L Serial-TTL-Converter-rescue:MAX736-project-symbols U3
 U 1 1 5F217A34
 P 6900 2400
 F 0 "U3" H 7200 2575 50  0000 C CNN
@@ -1876,4 +1832,48 @@ Wire Wire Line
 	4550 2700 4550 2850
 Wire Wire Line
 	3450 2400 3900 2400
+$Comp
+L Device:CP C10
+U 1 1 5F5464C8
+P 9100 2600
+F 0 "C10" H 8750 2550 50  0000 L CNN
+F 1 "270u/16V" H 8600 2650 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 9138 2450 50  0001 C CNN
+F 3 "~" H 9100 2600 50  0001 C CNN
+	1    9100 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5F3F9894
+P 8750 2600
+F 0 "R22" H 8850 2570 50  0000 C CNN
+F 1 "10k" H 8850 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8680 2600 50  0001 C CNN
+F 3 "~" H 8750 2600 50  0001 C CNN
+	1    8750 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5F3EFCCE
+P 11250 2900
+F 0 "C?" H 11368 2946 50  0000 L CNN
+F 1 "100u/6V3" H 11368 2855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 11288 2750 50  0001 C CNN
+F 3 "~" H 11250 2900 50  0001 C CNN
+	1    11250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5F576334
+P 5300 3150
+F 0 "C6" H 5418 3196 50  0000 L CNN
+F 1 "100u/6V3" H 5350 3050 35  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5338 3000 35  0001 C CNN
+F 3 "~" H 5300 3150 50  0001 C CNN
+	1    5300 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

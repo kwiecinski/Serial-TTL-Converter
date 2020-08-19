@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Serial-TTL-Converter-rescue)(type Legacy)(uri ${KIPRJMOD}/Serial-TTL-Converter-rescue.lib)(options "")(descr ""))
+)
