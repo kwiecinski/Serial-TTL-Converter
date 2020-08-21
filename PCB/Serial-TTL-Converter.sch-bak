@@ -113,19 +113,11 @@ Wire Wire Line
 Wire Wire Line
 	4250 5200 2850 5200
 Wire Wire Line
-	4250 5300 2850 5300
-Wire Wire Line
 	4250 5550 3500 5550
-Wire Wire Line
-	3500 5550 3500 5500
-Wire Wire Line
-	3500 5500 2850 5500
 Wire Wire Line
 	4250 5650 3400 5650
 Wire Wire Line
 	3400 5650 3400 5600
-Wire Wire Line
-	3400 5600 2850 5600
 $Comp
 L power:GND #PWR0105
 U 1 1 5F225BAB
@@ -457,11 +449,11 @@ Text Label 3100 5100 0    50   ~ 0
 RX
 Text Label 3100 5200 0    50   ~ 0
 DSR
-Text Label 3100 5300 0    50   ~ 0
+Text Label 3400 5300 0    50   ~ 0
 CTS
-Text Label 3100 5500 0    50   ~ 0
+Text Label 3600 5550 0    50   ~ 0
 TX
-Text Label 3100 5600 0    50   ~ 0
+Text Label 3500 5650 0    50   ~ 0
 DTR
 Text Label 5700 5550 2    50   ~ 0
 TX_L
@@ -1866,16 +1858,38 @@ F 3 "~" H 5300 3150 50  0001 C CNN
 $EndComp
 Text Label 3100 5700 0    50   ~ 0
 RI
-Text Label 2500 5450 0    50   ~ 0
+Text Label 3500 5750 0    50   ~ 0
 RTS
-Wire Wire Line
-	3350 5750 3350 5700
-Wire Wire Line
-	4250 5750 3350 5750
 Wire Wire Line
 	4250 5400 3250 5400
 Wire Wire Line
 	3250 5400 3250 5700
 Wire Wire Line
 	3250 5700 2850 5700
+Wire Wire Line
+	3000 5750 4250 5750
+Wire Wire Line
+	2850 5600 3000 5600
+Wire Wire Line
+	3000 5600 3000 5750
+Wire Wire Line
+	3050 5300 3050 5500
+Wire Wire Line
+	3050 5500 2850 5500
+Wire Wire Line
+	3050 5300 4250 5300
+Wire Wire Line
+	2850 5400 3150 5400
+Wire Wire Line
+	3150 5400 3150 5600
+Wire Wire Line
+	3150 5600 3400 5600
+Wire Wire Line
+	2850 5300 2950 5300
+Wire Wire Line
+	2950 5300 2950 5350
+Wire Wire Line
+	2950 5350 3500 5350
+Wire Wire Line
+	3500 5350 3500 5550
 $EndSCHEMATC
